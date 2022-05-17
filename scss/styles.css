@@ -184,49 +184,6 @@ img.pic1 {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  header {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 650px) {
-  .logo {
-    margin-top: 15px;
-    width: 100%;
-    position: relative;
-  }
-}
-
-@media (max-width: 650px) {
-  .logo > img {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 650px) {
-  nav {
-    margin-top: 10px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    padding: 0 50px;
-  }
-  nav li {
-    padding-bottom: 5px;
-  }
-}
-
 nav > ul {
   width: 35vw;
   display: -webkit-box;
@@ -238,15 +195,6 @@ nav > ul {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-@media (max-width: 650px) {
-  nav > ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 #hero {
@@ -317,27 +265,6 @@ nav > ul {
   height: 125px;
   width: 20vw;
   color: #666;
-}
-
-@media (max-width: 550px) {
-  #features .icon {
-    display: none;
-  }
-}
-
-@media (max-width: 550px) {
-  #features .desc {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    height: 150px;
-  }
-}
-
-@media (max-width: 650px) {
-  #features {
-    margin-top: 0;
-  }
 }
 
 #overview {
@@ -438,6 +365,94 @@ img.metaquest2 {
   transition: background-color 1s;
 }
 
+@media only screen and (max-width: 426px) {
+  .pagewrap {
+    width: 425px;
+    background-image: url(https://www.pcgamesn.com/wp-content/uploads/2022/01/Oculus-quest-3-meta-quest.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: 185% 100%;
+  }
+  .desc3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px;
+    border-radius: 3px;
+  }
+  .info {
+    margin-top: 0rem;
+  }
+  img.pic1 {
+    position: fixed;
+    max-width: 392.6px;
+    height: 300px;
+    border: transparent 5px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding: 16px;
+  }
+  header {
+    top: 0;
+    min-height: 58px;
+    width: 425px;
+    padding: 0px 30px;
+    padding-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+  }
+  .desc2 {
+    overflow: scroll;
+    padding-top: 4rem;
+    padding-left: 10rem;
+  }
+  .logo > img {
+    width: 30%;
+    height: 30%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn1 {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    width: 394px;
+    height: 80px;
+  }
+  nav > ul {
+    padding-top: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 420px;
+  }
+  #features {
+    padding-top: 2.5em;
+  }
+  #overview {
+    padding-top: 5.5em;
+  }
+  #pricing {
+    padding-top: 6rem;
+  }
+}
+
 @media (max-width: 800px) {
   #pricing {
     -webkit-box-orient: vertical;
@@ -450,6 +465,70 @@ img.metaquest2 {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #features {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
