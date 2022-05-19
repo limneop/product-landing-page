@@ -6,6 +6,7 @@
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="scss/styles.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
 </head>
 <body>
   <header id="header">
@@ -50,7 +51,7 @@
   </section>
   <div class="container">
       <section id="overview">
-        <iframe id="video" height="500" src="https://video.fmnl9-3.fna.fbcdn.net/v/t66.36240-2/119930656_371533208235387_4830471947366805939_n.mp4?_nc_cat=105&ccb=1-6&_nc_sid=985c63&efg=eyJybHIiOjIxMzAsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJvZXBfaGQifQ%3D%3D&_nc_ohc=B_PE6WnQyEEAX_EYWu4&rl=2130&vabr=1420&_nc_ht=video.fmnl9-3.fna&oh=00_AT8fpoY7S6OOHe6vwYOnthkdkYwz4Bjp1GGRhJFfFLwa8Q&oe=6287ECB9" frameborder="0" allowfullscreen></iframe>
+        <iframe id="video" height="500" src="https://www.youtube.com/embed/ATVGl9wOJsM" frameborder="0" allowfullscreen></iframe>
         </section>
         <section id="pricing">
           <div class="product" id="tenor">
@@ -77,16 +78,18 @@
     <section id="hero">
       <h2>KEEP YOUR EXPERIENCE UP TO DATE</h2>
       <h3>Get emails from Meta about all our products</h3><br>
-      <form id="form" action="">
+      <form id="form" action="thankyou.html" method="get">
         <input
           name="email"
           id="email"
           type="email"
           placeholder="Enter your email address"
           required/>
-        <input id="submit" type="submit" value="Get Started" class="btn" />
+        <input id="submit" type="submit" value="Get Started" class="btn"/>
       </form>
     </section>
-  
+    <div class="navbar10">
+      <input type="checkbox" class="navbar101" onclick="myFunction()">
+    </div>
 </body>
 </html>
